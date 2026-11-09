@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>ការគណនាតម្លៃ</h2>
+    <div class="mt-2">
+        <input type="number" id="v1" placeholder="Enter value1">
+    </div>
+    <div class="mt-2">
+        <input type="number" id="v2" placeholder="Enter value2">
+    </div>
+    
+    <p id="total">=</p>
+    <button onclick="Add()">+</button>
+    <button onclick="Add()">*</button>
+    <button onclick="Add()">/</button>
+    <button onclick="Add()">%</button>
+
+    <script>
+        function Add() {
+            let v1 = document.getElementById('v1').value;
+            let v2 = document.getElementById('v2').value;
+            console.log( v1 , v2);
+            
+            let result = Number(v1) + Number(v2) 
+                        Number(v1) * Number(v2)
+                        Number(v1) / Number(v2)
+                        Number(v1) % Number(v2);
+            document.getElementById('total').innerHTML= result(v1+v2);
+            document.getElementById('total').innerHTML= result(v1*v2);
+            document.getElementById('total').innerHTML= result(v1/v2);
+            document.getElementById('total').innerHTML= result(v1%v2);
+        }
+    </script>
+</body>
+</html>

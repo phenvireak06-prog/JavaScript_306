@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <h3>គណនាថ្លៃផ្ញើរយានយន្ដ</h3>
+        <div>
+            <label for="">ជ្រើសរើស​ យានជំនិះ</label>
+            <select id="type">
+                <option value="car">ឡាន</option>
+                <option value="motobike">ម៉ូតូ</option>
+                <option value="bike">កង់</option>
+            </select>
+        </div>
+        <br>
+        <div class="group-input">
+            <label for="">ម៉ោងចូល</label>
+            <input type="time" id="start">
+        </div>
+        <br>
+        <div class="group-input">
+            <label for="">ម៉ោងចេញ</label>
+            <input type="time" id="end">
+        </div>
+        <br>
+        <div class="group-input">
+            <label for="">ប្រាក់រៀល</label>
+            <input type="text" id="riel">
+        </div>
+        <br>
+        <div class="group-input">
+            <label for="">ប្រាក់ដុល្លារ</label>
+            <input type="text" id="dollar">
+        </div>
+        <br>
+        <div class="group-input">
+            <label for="">ប្រាក់សរុប</label>
+            <input type="text" id="result">
+        </div>
+        <br>
+        <button onclick="Calculate()">គណនា</button>
+    </div>
+
+    <div class="container">
+        <h3>ថ្ងៃ</h3>
+        <p>+​ ប្រើសេវាក្នុង​ 8h => 1h = 500៛</p>
+        <p>+ លើសពី​ 8h => 1h = 1000៛</p>
+
+        <br>
+
+        <h3>យប់</h3>
+        <p>+​ ប្រើសេវាក្នុង​ 8h => 1h = 200៛</p>
+        <p>+ លើសពី​ 8h => 1h = 300៛</p>
+    </div>
+
+    <script>
+        function Calculate(operator) {
+            let riel = document.getElementById('riel').value;
+            let dollar = document.getElementById('dollar').value;
+            let result = document.getElementById('result');
+
+        }
+
+        if (operator) {
+            
+        }
+
+    </script>
+</body>
+
+</html>
