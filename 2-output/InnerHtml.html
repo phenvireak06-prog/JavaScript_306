@@ -6,19 +6,34 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="number" id="v1" placeholder="please enter value1">
+    <!-- <input type="number" id="v1" placeholder="please enter value1">
     <input type="number" id="v2" placeholder="please enter value2">
     <p id="total"></p>
-    <button onclick="Add()">Add</button>
+    <button onclick="Add()">Add</button> -->
+
+    <div id="block"></div>
+
+    <div>
+
+        <div id="block2"></div>
+
+    </div>
+
+    <button onclick="printText()">Print</button>
 
     <script>
-        function Add() {
-            let v1 = document.getElementById('v1').value;
-            let v2 = document.getElementById('v2').value;
-            console.log(v1, v2);
 
-            let result = Number(v1) + Number(v2);
-            document.getElementById('total').innerHTML= result;
+        document.getElementById("block2").textContent="<b> this is textcontent </b>"
+
+        function printText() {
+
+            window.print();
+            // let v1 = document.getElementById('v1').value;
+            // let v2 = document.getElementById('v2').value;
+            // console.log(v1, v2);
+
+            // let result = Number(v1) + Number(v2);
+            // document.getElementById('total').innerHTML= result;
         }
     </script>
 </body>
